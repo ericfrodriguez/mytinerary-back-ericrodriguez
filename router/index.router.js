@@ -1,6 +1,6 @@
 import express from 'express';
 import userRouter from './user.router.js';
-import cityRouter from './city.router.js';
+import eventRouter from './event.router.js';
 
 const router = express.Router();
 
@@ -10,6 +10,6 @@ router.get('/', (req, res) => {
 
 router.use('/users', userRouter);
 
-router.use('/cities', cityRouter);
+router.use('/events', eventRouter);
 
 export default router;
