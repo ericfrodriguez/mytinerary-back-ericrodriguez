@@ -12,7 +12,7 @@ const schema = new Schema({
     price: { type: Number, required: true},
     capacity: { type: Number, required: true},
     assistance: { type: Number},
-    // user: {type: Types.ObjectId, ref: 'users'}
+    user: {type: Types.ObjectId, ref: 'users'}
 }, {
     timestamps: true
 })

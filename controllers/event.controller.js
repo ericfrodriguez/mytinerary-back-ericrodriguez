@@ -6,21 +6,58 @@ const controller = {
         let queries = {}
 
         if(req.query.name) {
-            queries.name = req.query.name
+            queries.name = new RegExp(`^${req.query.name}`, 'i')
+        }
+
+        if(req.query.category) {
+            queries.category = req.query.category
         }
 
         try {
-            const events = await Event.find(queries)
+            const events = await Event.find(queries).populate('user');
 
-            return res.status(200).json({
-                success: true,
-                events: events
+            if(events.length > 0) {
+                return res.status(200).json({
+                    success: true,
+                    events: events
+                })
+            }
+
+            return res.status(404).json({
+                success: false,
+                message: 'No se encontraron eventos'
             })
+
         } catch (error) {
             console.log(error)
             return res.status(500).json({
                 success: false,
                 message: 'Error al obtener los eventos'
+            })
+        }
+    },
+    getEventById: async (req, res) => {
+        try {
+            // console.log(req.params)
+            const oneEvent = await Event.findById(req.params.id)
+
+            if(oneEvent) {
+                return res.status(200).json({
+                    success: true,
+                    event: oneEvent
+                })
+            }
+
+            return res.status(404).json({
+                success: false,
+                message: 'No se pudo encontrar el evento'
+            })
+
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error al obtener el evento'
             })
         }
     },
