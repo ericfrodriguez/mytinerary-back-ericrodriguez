@@ -46,7 +46,9 @@
             "place": "Football field",
             "price": 2,
             "capacity": 200000,
-            "assistance": 198900
+            "assistance": 198900,
+            "user": "64da40f5c1156c44be6c81fd"
+
         },
         {
             "name": "School's book fair",
@@ -57,7 +59,9 @@
             "place": "Multi Space",
             "price": 2,
             "capacity": 50000,
-            "assistance": 38429
+            "assistance": 38429,
+            "user": "64da40f5c1156c44be6c81fd"
+
         },
         {
             "name": "Aladdin",
@@ -68,7 +72,9 @@
             "place": "Showcase",
             "price": 4,
             "capacity": 2500,
-            "assistance": 1875
+            "assistance": 1875,
+            "user": "64da40f5c1156c44be6c81fd"
+
         },
         {
             "name": "Arabic holidays",
@@ -79,7 +85,9 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "estimate": 50000
+            "estimate": 50000,
+            "user": "64da40f5c1156c44be6c81fd"
+
         },
         {
             "name": "Korean style",
@@ -90,7 +98,9 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "assistance": 48516
+            "assistance": 48516,
+            "user": "64da40f5c1156c44be6c81fd"
+
         },
         {
             "name": "Japanese style",
@@ -101,7 +111,8 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "assistance": 49618
+            "assistance": 49618,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Straight from Middle East",
@@ -112,7 +123,8 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "assistance": 42756
+            "assistance": 42756,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Take away",
@@ -123,7 +135,8 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "assistance": 42756
+            "assistance": 42756,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Italian style",
@@ -134,7 +147,8 @@
             "place": "Multi Space",
             "price": 10,
             "capacity": 50000,
-            "assistance": 42756
+            "assistance": 42756,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Fantasy books",
@@ -145,7 +159,8 @@
             "place": "Multi Space",
             "price": 4,
             "capacity": 50000,
-            "assistance": 44029
+            "assistance": 44029,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Just for your kitchen",
@@ -156,7 +171,8 @@
             "place": "Multi Space",
             "price": 2,
             "capacity": 50000,
-            "estimate": 5000
+            "estimate": 5000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "BestSeller",
@@ -167,7 +183,8 @@
             "place": "Multi Space",
             "price": 5,
             "capacity": 50000,
-            "estimate": 48000
+            "estimate": 48000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Just Harry",
@@ -178,7 +195,8 @@
             "place": "Multi Space",
             "price": 5,
             "capacity": 50000,
-            "estimate": 50000
+            "estimate": 50000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Comicon",
@@ -189,7 +207,8 @@
             "place": "Monumental Theater",
             "price": 10,
             "capacity": 50000,
-            "assistance": 45781
+            "assistance": 45781,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Spring Day",
@@ -200,7 +219,8 @@
             "place": "Monumental Theater",
             "price": 10,
             "capacity": 50000,
-            "estimate": 30000
+            "estimate": 30000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Cultures",
@@ -211,7 +231,8 @@
             "place": "Monumental Theater",
             "price": 2,
             "capacity": 50000,
-            "estimate": 45000
+            "estimate": 45000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "For the little ones",
@@ -222,7 +243,8 @@
             "place": "Monumental Theater",
             "price": 1,
             "capacity": 50000,
-            "estimate": 50000
+            "estimate": 50000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Epic party",
@@ -233,7 +255,8 @@
             "place": "Monumental Theater",
             "price": 2,
             "capacity": 50000,
-            "estimate": 50000
+            "estimate": 50000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "15K NY",
@@ -244,7 +267,8 @@
             "place": "New York",
             "price": 5,
             "capacity": 1000000,
-            "assistance": 926981
+            "assistance": 926981,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "15K Buenos Aires",
@@ -255,7 +279,8 @@
             "place": "Buenos Aires",
             "price": 3,
             "capacity": 500000,
-            "estimate": 300000
+            "estimate": 300000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Buenos Aires 2023",
@@ -266,7 +291,8 @@
             "place": "Buenos Aires",
             "price": 3,
             "capacity": 500000,
-            "estimate": 50000
+            "estimate": 50000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "New York 2023",
@@ -277,7 +303,8 @@
             "place": "New York",
             "price": 5,
             "capacity": 1000000,
-            "estimate": 1000000
+            "estimate": 1000000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "For Life 2nd Edition",
@@ -288,7 +315,8 @@
             "place": "Cordoba",
             "price": 2,
             "capacity": 300000,
-            "estimate": 270500
+            "estimate": 270500,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Cancer Marathon",
@@ -299,7 +327,8 @@
             "place": "Rosario",
             "price": 2,
             "capacity": 300000,
-            "estimate": 300000
+            "estimate": 300000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Electronic Fest",
@@ -310,7 +339,8 @@
             "place": "Stadium",
             "price": 20,
             "capacity": 500000,
-            "assistance": 488005
+            "assistance": 488005,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Popular Music",
@@ -321,7 +351,8 @@
             "place": "Stadium",
             "price": 20,
             "capacity": 500000,
-            "assistance": 464780
+            "assistance": 464780,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Classics",
@@ -332,7 +363,8 @@
             "place": "Stadium",
             "price": 20,
             "capacity": 500000,
-            "assistance": 421988
+            "assistance": 421988,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Opera",
@@ -343,7 +375,8 @@
             "place": "Stadium",
             "price": 20,
             "capacity": 500000,
-            "estimate": 500000
+            "estimate": 500000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Reggaeton 2022",
@@ -354,7 +387,8 @@
             "place": "Stadium",
             "price": 20,
             "capacity": 500000,
-            "estimate": 500000
+            "estimate": 500000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Parisian Museum",
@@ -365,7 +399,8 @@
             "place": "Paris",
             "price": 10,
             "capacity": 5200,
-            "assistance": 3506
+            "assistance": 3506,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Abstract Art",
@@ -376,7 +411,8 @@
             "place": "Buenos Aires",
             "price": 2,
             "capacity": 1000,
-            "estimate": 1000
+            "estimate": 1000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Buenos Aires' Museum",
@@ -387,7 +423,8 @@
             "place": "Buenos Aires",
             "price": 2,
             "capacity": 1000,
-            "estimate": 1000
+            "estimate": 1000,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "Acropolis",
@@ -398,7 +435,8 @@
             "place": "Athens",
             "price": 10,
             "capacity": 1600,
-            "estimate": 1350
+            "estimate": 1350,
+            "user": "64da40f5c1156c44be6c81fd"
         },
         {
             "name": "British Museum",
@@ -409,7 +447,8 @@
             "place": "England",
             "price": 8,
             "capacity": 1200,
-            "estimate": 980
+            "estimate": 980,
+            "user": "64da40f5c1156c44be6c81fd"
         }
     ]
 }

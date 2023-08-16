@@ -76,7 +76,50 @@ const controller = {
                 message: 'Error al crear el evento'
             })
         }
-    }
+    },
+    updateEvent: async (req, res) => {
+        try {
+            // findOneAndUpdate: Buscar el elemento por algun parametro y lo actualiza. Retorna el elemento antes de ser actualizado o ya actualizado
+            // findByIdAndUpdate: Buscar el elemento por su ID y lo actualiza. Retorna el elemento antes de ser actualizado o ya actualizado
+            // updateOne: Actualiza el elemento directamente
+            // updateMany: Actualiza varios elementos directamente
+
+            await Event.updateOne({_id: req.params.id}, req.body)
+
+            return res.status(200).json({
+                success: true,
+                message: 'El evento se actualizo con exito'
+            })
+
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error al actualizar el evento'
+            })
+        }
+    },
+    deleteEvent: async (req, res) => {
+        try {
+            // findOneAndDelete: Buscar el elemento por algun parametro y lo elimina. Retorna el elemento antes de ser actualizado o ya actualizado
+            // findByIdAndDelete: Buscar el elemento por su ID y lo elimina. Retorna el elemento antes de ser actualizado o ya actualizado
+            // deleteOne: Elimina el elemento directamente
+            // deleteMany: Elimina varios elementos directamente
+
+            await Event.deleteOne({_id: req.params.id})
+
+            return res.status(200).json({
+                success: true,
+                message: 'El evento se elimino con exito'
+            })
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error al eliminar el evento'
+            })
+        }
+    },
 }
 
 export default controller;
