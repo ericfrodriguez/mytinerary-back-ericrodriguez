@@ -13,7 +13,8 @@ const schema = new Schema({
     capacity: { type: Number, required: true },
     assistance: { type: Number },
     estiamte: { type: Number },
-    user: { type: Types.ObjectId, ref: 'users' }
+    user: { type: Types.ObjectId, ref: 'users' },
+    company: {type: Types.ObjectId, ref: 'companies'}
 }, {
     timestamps: true
 })
