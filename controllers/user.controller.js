@@ -11,11 +11,7 @@ const controller = {
             })
 
         } catch (error) {
-            console.log(error);
-            res.status(500).json({
-                success: false,
-                message: 'Error al crear un usuario'
-            })
+            next(error)
         }
     },
     createUser: async (req, res) => {
