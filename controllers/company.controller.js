@@ -1,22 +1,26 @@
-import User from "../models/User.js";
+import Company from "../models/Company.js";
 
 const controller = {
-    getUsers: async (req, res) => {
+    getCompany: async (req, res) => {
         try {
-            const users = await User.find();
+            const companies = await Company.find().populate('events');
 
             return res.status(200).json({
                 success: true,
-                users
+                companies
             })
 
         } catch (error) {
-            next(error)
+            console.log(error);
+            res.status(500).json({
+                success: false,
+                message: 'Error al crear un usuario'
+            })
         }
     },
-    createUser: async (req, res) => {
+    createCompany: async (req, res) => {
         try {
-            const newUser = await User.create(req.body);
+            const newCompany = await Company.create(req.body);
 
             return res.status(200).json({
                 success: true,
@@ -31,7 +35,7 @@ const controller = {
             })
         }
     },
-    deleteUser: () => {},
+    deleteCompany: () => {},
 }
 
 export default controller;

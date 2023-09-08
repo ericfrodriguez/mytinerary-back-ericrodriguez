@@ -5,18 +5,30 @@ const controller = {
 
         let queries = {}
 
-        if(req.query.name) {
+        if (req.query.name) {
             queries.name = new RegExp(`^${req.query.name}`, 'i')
         }
 
-        if(req.query.category) {
+        if (req.query.category) {
             queries.category = req.query.category
         }
 
-        try {
-            const events = await Event.find(queries).populate('user');
+        if(req.query.companyId) {
+            queries.company = req.query.companyId
+        }
 
-            if(events.length > 0) {
+        try {
+            let events;
+
+            if (req.query.company === 'true') {
+                events = await Event.find(queries)
+                .populate('company', 'contact_info name')
+                .populate('user');
+            } else {
+                events = await Event.find(queries);
+            }
+
+            if (events.length > 0) {
                 return res.status(200).json({
                     success: true,
                     events: events
@@ -40,8 +52,10 @@ const controller = {
         try {
             // console.log(req.params)
             const oneEvent = await Event.findById(req.params.id)
+            .populate('company', 'contact_info name')
+            .populate('user');
 
-            if(oneEvent) {
+            if (oneEvent) {
                 return res.status(200).json({
                     success: true,
                     event: oneEvent
@@ -64,7 +78,7 @@ const controller = {
     createEvent: async (req, res) => {
         try {
             const newEvent = await Event.create(req.body);
-    
+
             return res.status(201).json({
                 success: true,
                 message: 'Evento creado'
@@ -84,7 +98,7 @@ const controller = {
             // updateOne: Actualiza el elemento directamente
             // updateMany: Actualiza varios elementos directamente
 
-            await Event.updateOne({_id: req.params.id}, req.body)
+            await Event.updateOne({ _id: req.params.id }, req.body)
 
             return res.status(200).json({
                 success: true,
@@ -106,7 +120,7 @@ const controller = {
             // deleteOne: Elimina el elemento directamente
             // deleteMany: Elimina varios elementos directamente
 
-            await Event.deleteOne({_id: req.params.id})
+            await Event.deleteOne({ _id: req.params.id })
 
             return res.status(200).json({
                 success: true,
