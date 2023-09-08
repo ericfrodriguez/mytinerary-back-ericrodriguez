@@ -1,6 +1,7 @@
 import Joi from 'joi';
 
-export const createUserSchema = Joi.object({
+
+export const userSignUp = Joi.object({
     email: Joi.string()
         .required()
         .email({
@@ -18,7 +19,7 @@ export const createUserSchema = Joi.object({
         .min(2)
         .max(50),
     // .regex(Solo caracteres alfabeticos),
-    image: Joi.string()
+    photo: Joi.string()
         .required()
         .uri()
 })
