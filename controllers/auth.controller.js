@@ -46,7 +46,7 @@ const controller = {
 
             return res.status(200).json({
                 success: true,
-                message: 'Usuario logueado correctamente',
+                message: 'Usuario logueado!',
                 response: {
                     token,
                     user: {
