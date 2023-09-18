@@ -2,6 +2,7 @@ import Event from "../models/Event.js"
 
 const controller = {
     getEvents: async (req, res) => {
+        console.log(req.get('host'))
 
         let queries = {}
 
